@@ -16,4 +16,15 @@ function fibonacciSeq(n) {
 
 //Big-O = O(n), linear due to single for loop
 //control statements can be added to negate negative numbers.
-// console.log(fibonacciSeq(6));
+
+//RECURSIVE SOLUTION - only return n'th number in the sequence.
+
+function recursiveFib(n) {
+  if (n < 2) {
+    // if input is 1 or 0, return 1 or 2 as they're the first 2 numbers of the sequence.
+    return n;
+  }
+  return recursiveFib(n - 1) + recursiveFib(n - 2);
+}
+
+//Time complexity here is O(2**n), iterative solution is much better

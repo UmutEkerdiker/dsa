@@ -16,3 +16,15 @@ function factorial(n) {
 // console.log(factorial(4));
 // Big-O = O(n) since we have a single for loop.
 // Conditional statements can be added to negate negative numbers.
+
+//RECURSIVE SOLUTION - base case is 0! is equal to 1
+
+function recursiveFactorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * recursiveFactorial(n - 1);
+}
+
+// console.log(recursiveFactorial(5));
+//Big-O = O(n) in recursive solution
